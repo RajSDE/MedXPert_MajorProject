@@ -104,11 +104,10 @@ urlpatterns = [
 
 <hr>
 
-#### templates
+### Templates
 Create a folder name `templates` in `backend` directory
 Inside this folder, we will store all `html` file/templates
 
-<hr>
 
 #### index.html
 create a sample index.html file to display with your django development server as
@@ -139,7 +138,7 @@ and add this link in `head` tag of `index.html` as
 
 <hr>
 
-#### views.py
+### views.py
 define function in your views as
 ```python
 from django.shortcuts import render
