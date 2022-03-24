@@ -104,7 +104,7 @@ urlpatterns = [
 
 <hr>
 
-#### templates
+#### Templates
 Create a folder name `templates` in `backend` directory
 Inside this folder, we will store all `html` file/templates
 
@@ -126,6 +126,10 @@ create a sample index.html file to display with your django development server a
 </html>
 ```
 <hr>
+
+#### Static
+Create a folder name `static` in `backend` directory
+Inside this folder, we will store all `css` `js` `img` and other files
 
 ##### css
 Create folder as `css` in `static` directory and then create `style.css` file in `css` directory and write all css components there
