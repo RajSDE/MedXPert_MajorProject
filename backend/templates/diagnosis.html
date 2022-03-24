@@ -1,0 +1,81 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+    <!-- <script src="main.js"></script> -->
+    <link href="{% static 'css/diagnosis.css'%}" rel="stylesheet">
+</head>
+<body>
+    <div class="header">
+        <div class="navbar">
+            <h1 class="title">
+                MedXPert
+            </h1>
+            <ol>
+                <li><a href="/">Home</a></li>
+                <li><a href="#">Service</a></li>
+                <li><a href="#" class="active">Diagnose</a></li>
+                <li><a href="#">Contact</a></li>
+            </ol>
+        </div>
+    </div>
+    <div id="home">
+        <div class="HomeContent">
+            <div class="box">
+                <div class="boxContent">
+                    <a href="liver/">
+                    <img src="https://cdn-icons-png.flaticon.com/512/3520/3520541.png" alt="logo">
+                    <h1>Liver Disorders</h1>
+                    </a>
+                </div>
+            </div>
+            <div class="box">
+                <div class="boxContent">
+                    <a href="">
+                    <img src="/static/Images/Tuberculosis-removebg-preview.png" alt="logo">
+                    <h1>Tuberculosis</h1>
+                    </a>
+                </div>
+            </div>
+            <div class="box">
+                <div class="boxContent">
+                    <a href="">
+                    <img src="https://cdn1.iconfinder.com/data/icons/diseases-2/130/Disease-09-512.png" alt="logo">
+                    <h1>Kidney Disorders</h1>
+                    </a>
+                </div>
+            </div>
+            <div class="box">
+                <div class="boxContent">
+                    <a href="">
+                    <img src="/static/Images/cardic-removebg-preview.png" alt="logo">
+                    <h1>Cardiac Complaints</h1>
+                    </a>
+                </div>
+            </div>
+            <div class="box">
+                <div class="boxContent">
+                    <a href="">
+                    <img src="/static/Images/images.png" alt="logo">
+                    <h1>Blood Sugar</h1>
+                    </a>
+                </div>
+            </div>
+            <div class="box">
+                <div class="boxContent">
+                    <a href="">
+                    <img src="/static/Images/diabetes-removebg-preview.png" alt="logo">
+                    <h1>Diabetes Test</h1>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>
