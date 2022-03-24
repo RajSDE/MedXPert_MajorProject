@@ -103,7 +103,7 @@ urlpatterns = [
 Create a folder name `templates` in `backend` directory
 Inside this folder, we will store all `html` file/templates
 
-### index.html
+#### index.html
 create a sample index.html file to display with your django development server as
 ```html
 <!DOCTYPE html>
@@ -120,7 +120,7 @@ create a sample index.html file to display with your django development server a
 </html>
 ```
 
-### css
+#### css
 Create folder as `css` in `static` directory and then create `style.css` file in `css` directory and write all css components there
 and add this link in `head` tag of `index.html` as
 ```html
