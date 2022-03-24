@@ -38,6 +38,7 @@ django-admin startproject project
 ```
 
 Then Change you directory inside the folder name `project`
+<hr>
 
 ### Setup files and folders
 Now, create django app as `python manage.py startapp` (appName)
@@ -79,6 +80,8 @@ urlpatterns = [
     path('',include('backend.urls')), # Added here
 ]
 ```
+<hr>
+
 #### urls.py
 Create `urls.py` file in `backend` folder
 ```python
@@ -99,9 +102,13 @@ urlpatterns = [
 ```
 `path('address', function defined on views , name)`
 
+<hr>
+
 #### templates
 Create a folder name `templates` in `backend` directory
 Inside this folder, we will store all `html` file/templates
+
+<hr>
 
 #### index.html
 create a sample index.html file to display with your django development server as
@@ -119,6 +126,7 @@ create a sample index.html file to display with your django development server a
 </body>
 </html>
 ```
+<hr>
 
 #### css
 Create folder as `css` in `static` directory and then create `style.css` file in `css` directory and write all css components there
@@ -128,6 +136,8 @@ and add this link in `head` tag of `index.html` as
 ```
 
 >Must add `{% load static %}` on `html` file to include the external `static` directory
+
+<hr>
 
 #### views.py
 define function in your views as
