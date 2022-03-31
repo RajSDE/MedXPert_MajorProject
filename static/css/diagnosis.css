@@ -79,7 +79,9 @@ ol{
 #home::before{ 
     content: "";
     position:fixed;
-    background: url('../Images/main_bg.jpg') no-repeat center center/cover;
+    /* background: url('../Images/main_bg.jpg') no-repeat center center/cover; */
+    /* background: url('https://wallpaperaccess.com/full/624111.jpg') no-repeat center center/cover; */
+    background: linear-gradient(37deg, #d8d8d8, white);
     height: 100vh;
     width: 100vw;
     z-index: -1;
