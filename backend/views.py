@@ -10,6 +10,8 @@ def diagnosis(request):
     return render(request,'diagnosis.html')
 def liver(request):
     return render(request,'liver.html')
+def service(request):
+    return render(request,'service.html')
 
 
 def ValuePredictor(to_predict_list,size,model_name):
