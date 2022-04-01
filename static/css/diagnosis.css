@@ -79,9 +79,9 @@ ol{
 #home::before{ 
     content: "";
     position:fixed;
-    /* background: url('../Images/main_bg.jpg') no-repeat center center/cover; */
-    /* background: url('https://wallpaperaccess.com/full/624111.jpg') no-repeat center center/cover; */
-    background: linear-gradient(37deg, #d8d8d8, white);
+    background: url('../Images/mainBGimg.jpg') no-repeat center center/cover;
+    /* background: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT3xyRmW79jSj2ljzM6NlPr0ExRH9Dcm93Zxg&usqp=CAU') no-repeat center center/cover; */
+    /* background: linear-gradient(37deg, #d8d8d8, white); */
     height: 100vh;
     width: 100vw;
     z-index: -1;
@@ -107,8 +107,8 @@ ol{
 .HomeContent .box{
     display: flex;
     margin: auto;
-    width: 250px;
-    height: 200px;
+    width: 90%;
+    height: 220px;
     border: 2px outset rgb(173, 173, 173);
     border-radius: 5px;
     background-color: #ffffff;
