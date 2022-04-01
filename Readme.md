@@ -1,4 +1,8 @@
-# Project Installations in Local System
+<p  align="right"><img src="https://visitor-badge.laobi.icu/badge?page_id=MEDXPERT_MAJORPROJECT" alt="Visitor badge"/>
+
+# <p align="center"> Welcome🙏🏻 </p> Hi, I'm Raj! <img src="https://raw.githubusercontent.com/ABSphreak/ABSphreak/master/gifs/Hi.gif" width="30px" />
+
+# <p align="center">Project Installations in Local System</p>
 ## Run Locally
 
 - Download the Project and Unzip it
@@ -42,7 +46,7 @@ Start the Server
 <hr>
 <hr>
 
-# Development Documentations
+# <p align="center"> Development Documentations</p>
 
 **Install Django in Virtual Envoirnment**
 
