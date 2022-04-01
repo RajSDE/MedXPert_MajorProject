@@ -1,4 +1,47 @@
-# Project Documentations
+# Project Installations in Local System
+## Run Locally
+
+- Download the Project and Unzip it
+- Open Commant Prompt
+> You must have Python3 installed in your system
+
+
+Go to the project directory
+```bash
+    cd MEDXPERT_MAJORPROJECT
+```
+
+Create Virtual Envoirnment of Python
+```bash
+    pip install virtualenvwrapper-win
+```
+
+Make Virtual Envoirnment as I named it `venv`
+```
+    mkvirtualenv venv
+```
+Open Virtual Envoirnment as
+
+```bash
+    workon venv
+```
+
+Install Dependencies
+
+```bash
+    pip install -r requirenments.txt
+```
+
+Start the Server
+```bash
+    python manage.py runserver
+```
+
+>   Development Server started at `localhost:8000`
+
+<hr>
+<hr>
+# Development Documentations
 
 **Install Django in Virtual Envoirnment**
 
