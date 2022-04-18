@@ -4,25 +4,25 @@
 
 # <p align="center">Project Demonstration</p>
 
-# Home
+## Home
 ![Home Screenshot](./Screenshots/Med_home.png)
 
-# Service
+## Service
 ![Service Screenshot](./Screenshots/Med_service.png)
 
-# Diagnose
+## Diagnose
 ![Diagnose Screenshot](./Screenshots/Med_diagnose.png)
 
-# Liver Disorder
+## Liver Disorder
 ![Diagnose Screenshot](./Screenshots/Med_liver.png)
 
-# Liver Disorder Checkup
+## Liver Disorder Checkup
 ![Diagnose Screenshot](./Screenshots/Med_checkup.png)
 
-# Risk Report
+## Risk Report
 ![Diagnose Screenshot](./Screenshots/Med_risk_report.png)
 
-# Safe Report
+## Safe Report
 ![Diagnose Screenshot](./Screenshots/Med_no_risk_report.png)
 
 <hr>
