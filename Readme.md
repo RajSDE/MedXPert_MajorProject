@@ -52,9 +52,10 @@
 
 <img src="https://www.inventateq.com/assets/machine-banner.png" alt="ML" width="40" height="40"/>
 
-<img src="https://github.com/devicons/devicon/blob/master/icons/vscode/vscode-original-wordmark.svg" alt="VScode" width="40" height="40"/>
+<img src="https://github.com/devicons/devicon/blob/master/icons/vscode/vscode-original-wordmark.svg" alt="VScode" width="40" height="40" margin="100"/>
 
 </p>
+
 ## Run Locally
 
 - Download the Project and Unzip it
