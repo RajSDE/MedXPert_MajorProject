@@ -2,6 +2,31 @@
 
 # <p align="center"> Welcome🙏🏻 </p> Hi, I'm Raj! <img src="https://raw.githubusercontent.com/ABSphreak/ABSphreak/master/gifs/Hi.gif" width="30px" />
 
+# <p align="center">Project Demonstration</p>
+
+# Home
+![Home Screenshot](./Screenshots/Med_home.png)
+
+# Service
+![Service Screenshot](./Screenshots/Med_service.png)
+
+# Diagnose
+![Diagnose Screenshot](./Screenshots/Med_diagnose.png)
+
+# Liver Disorder
+![Diagnose Screenshot](./Screenshots/Med_liver.png)
+
+# Liver Disorder Checkup
+![Diagnose Screenshot](./Screenshots/Med_checkup.png)
+
+# Risk Report
+![Diagnose Screenshot](./Screenshots/Med_risk_report.png)
+
+# Safe Report
+![Diagnose Screenshot](./Screenshots/Med_no_risk_report.png)
+
+<hr>
+
 # <p align="center">Project Installations in Local System</p>
 ## Run Locally
 
