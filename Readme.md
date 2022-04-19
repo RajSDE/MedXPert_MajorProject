@@ -4,7 +4,8 @@
 
 # <p align="center">Project Demonstration</p>
 
-## Home
+<h2> Home </h2>
+
 ![Home Screenshot](./Screenshots/Med_home.png)
 
 ## Service
