@@ -2,7 +2,7 @@ from django.shortcuts import render
 import joblib
 import numpy as np
 
-# Create your views here.
+# ------------------- Rendering Pages -------------------------- #
 
 def home(request):
     return render(request, 'index.html')
@@ -20,6 +20,11 @@ def service(request):
     return render(request,'service.html')
 
 
+# ------------------- XXXXXXXXXXXXXX -------------------------- #
+
+
+# ------------------- General Function for All Models -------------------------- #
+
 def ValuePredictor(to_predict_list,size,model_name):
     mdname = str(model_name)
     to_predict = np.array(to_predict_list).reshape(1,size)
@@ -28,7 +33,15 @@ def ValuePredictor(to_predict_list,size,model_name):
         result = trained_model.predict(to_predict)
     return result[0]
 
-# function for liver disease prediction
+# ------------------- XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX -------------------------- #
+
+
+
+
+
+
+# ------------------- Liver Disease -------------------------- #
+
 def lpredictor(request):
     mname = "liver"
     llis = []
@@ -42,7 +55,17 @@ def lpredictor(request):
     else:
         return render(request,'norisk.html')
 
-# function for kidney disease prediction
+
+# ------------------- Disease End --------------------------- #
+
+
+
+
+
+
+
+# ------------------- Kidney Disease ------------------------ #
+
 def kdpredictor(request):
     mname = "kidney"
     klis = []
@@ -56,18 +79,57 @@ def kdpredictor(request):
     else:
         return render(request,'norisk.html')
 
-# function for heart disease prediction
+# ------------------- Disease End ------------------------- #
+
+
+
+
+
+
+
+
+# ------------------- Heart Disease ----------------------- #
+
+import pandas as pd
+from sklearn.model_selection import train_test_split
+from sklearn.linear_model import LogisticRegression
+import warnings
+warnings.filterwarnings('ignore')
+
+def HeartPredictor(to_predict_list,size,model_name):
+    heart = pd.read_csv('./MachineLearningModels/DataSets/heartdataNew.csv')
+    labels = heart['target']
+    features = heart.drop(['target'], axis = 1)
+    features_train , features_test, labels_train, labels_test = train_test_split(features, labels, test_size= 0.3, random_state=2)
+    logisticRegression = LogisticRegression( solver='lbfgs')
+    logisticRegression.fit(features_train,labels_train)
+    to_predict = np.array(to_predict_list).reshape(1,size)
+    if(size==7):
+        result = logisticRegression.predict(to_predict)
+    return result[0]
+
 def hdpredictor(request):
     mname = "heart"
     hlis = []
     hlis = [request.POST.get(i, False) for i in ('cp', 'trestbps', 'chol', 'fbs', 'restecg', 'thalach', 'exang')]    
     if(len(hlis)==7):
-        result = ValuePredictor(hlis,7,mname)
+        result = HeartPredictor(hlis,7,mname)
     
     if(int(result)==1):
         return render(request,'risk.html')
     else:
         return render(request,'norisk.html')
+
+# ------------------- Heart End -------------------------- #
+
+
+
+
+
+
+
+# ------------------- Diabetes Disease ----------------------- #
+
 def dbpredictor(request):
     dblis = []
     dblis.append(request.POST['Pregnancies'])
@@ -84,7 +146,9 @@ def dbpredictor(request):
     else:
         return render(request,'norisk.html')
 
+
 # Sample Machine Learning Code for diabetes prediction
+
 import pandas as pd
 from sklearn.preprocessing import StandardScaler
 from sklearn.model_selection import train_test_split
@@ -95,7 +159,6 @@ diabetes_dataset = pd.read_csv('./diabetes.csv')
 def DiabetesValuePredictor(to_predict_list,size):
     to_predict = np.array(to_predict_list).reshape(1,size)
     X = diabetes_dataset.drop(columns = 'Outcome', axis=1)
-    # X = diabetes_dataset['Pregnancies', 'Glucose', 'BloodPressure', 'BMI', 'DiabetesPedigreeFunction', 'Age']
     Y = diabetes_dataset['Outcome']
     scaler = StandardScaler()
     scaler.fit(X)
@@ -115,5 +178,7 @@ def DiabetesValuePredictor(to_predict_list,size):
         std_data = scaler.transform(to_predict)
         result = classifier.predict(std_data)
     return result[0]
- 
+
+# ------------------- Diabetes End ----------------------- #
+
  
