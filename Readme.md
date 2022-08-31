@@ -1,6 +1,6 @@
 <p  align="right"><img src="https://visitor-badge.laobi.icu/badge?page_id=MEDXPERT_MAJORPROJECT" alt="Visitor badge"/>
 
-# <p align="center"> Welcome🙏🏻 </p> Hi, I'm Raj! <img src="https://raw.githubusercontent.com/ABSphreak/ABSphreak/master/gifs/Hi.gif" width="30px" />
+# <p align="center"> Welcome🙏🏻 </p> Hi, I'm Raj!👋
 
 I'm a Computer Science Engineer, & I'm confident to work on the projects with my own experience & skills...
 
